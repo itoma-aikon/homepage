@@ -74,6 +74,21 @@ h2 {
 }
 
 /* --- Styles for Blog Post Pages --- */
+
+/* 記事ページの日付表示用のスタイル */
+.article-dates {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
+    color: #666;
+    font-size: 0.9em;
+}
+.article-dates p {
+    margin: 5px 0;
+}
+
+
+
 .article-content h1, 
 .article-content h2, 
 .article-content h3 { 
