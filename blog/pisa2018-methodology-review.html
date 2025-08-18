@@ -73,8 +73,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 いあのブログ. All Rights Reserved.</p>
-    </footer>
+    	<p>&copy; <span id="copyright-year">2025</span> いあのブログ. All Rights Reserved.</p>
+	</footer>
+
+	<script>
+    	document.getElementById('copyright-year').textContent = new Date().getFullYear();
+	</script>
 
 </body>
 </html>
