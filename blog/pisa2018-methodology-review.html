@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PISA論文「別学と共学の違いから見る男女のいじめに対する意識の計量分析」への方法論的検討.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="pisa%E8%AB%96%E6%96%87%E5%88%A5%E5%AD%A6%E3%81%A8%E5%85%B1%E5%AD%A6%E3%81%AE%E9%81%95%E3%81%84%E3%81%8B%E3%82%89%E8%A6%8B%E3%82%8B%E7%94%B7%E5%A5%B3%E3%81%AE%E3%81%84%E3%81%98%E3%82%81%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E6%84%8F%E8%AD%98%E3%81%AE%E8%A8%88%E9%87%8F%E5%88%86%E6%9E%90%E3%81%B8%E3%81%AE%E6%96%B9%E6%B3%95%E8%AB%96%E7%9A%84%E6%A4%9C%E8%A8%8E"><strong>PISA論文「別学と共学の違いから見る男女のいじめに対する意識の計量分析」への方法論的検討</strong></h1>
+<h2 id="%E5%BA%8F%E8%AB%96"><strong>(序論)</strong></h2>
+<p>PISA2018データを用いた相澤・池田両氏の論文は、「日本の男子校では、社会経済的地位や数学的リテラシーが高い生徒ほど、いじめを容認する傾向がある」という、一般の認識とは大きく異なる結果を提示している。多くの人が抱くであろう直感との乖離は、一体どこから生じるのか。</p>
+<p>本稿では、論文が提示した結論の是非を直接問うのではなく、その結論を導き出すに至った研究のデザイン、特にモデルの設計と従属変数の設定に焦点を当て、方法論的な検討を行う。分析の結果、この論文の解釈には慎重を要する、少なくとも4つの重要な論点が存在することが明らかになった。</p>
+<hr>
+<h2 id="%E6%9C%AC%E7%A8%BF%E3%81%8C%E6%8C%87%E6%91%98%E3%81%99%E3%82%8B4%E3%81%A4%E3%81%AE%E6%96%B9%E6%B3%95%E8%AB%96%E7%9A%84%E8%AA%B2%E9%A1%8C"><strong>(本稿が指摘する4つの方法論的課題)</strong></h2>
+<h3 id="1-%E6%AC%A0%E8%90%BD%E5%A4%89%E6%95%B0%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E8%A6%8B%E9%81%8E%E3%81%94%E3%81%95%E3%82%8C%E3%81%9F%E3%81%84%E3%81%98%E3%82%81%E3%81%B8%E3%81%AE%E9%96%A2%E5%BF%83"><strong>1. 欠落変数バイアスの可能性：見過ごされた「いじめへの関心」</strong></h3>
+<p>本研究の論理構成を検討する上で、まず「いじめ反対意識」と「いじめの発生度合い」の関係性をどう捉えるかが鍵となる。著者らは先行研究（Man et al. 2022）を引用し、「いじめに反対する態度が、いじめを防ぐことに結びつく」という因果関係を論の前提に置いている。</p>
+<p>しかし、この前提を本研究の結論に適用するには、**無視できない欠落変数の問題（Omitted Variable Bias）**が存在する。ここで対抗仮説として「<strong>いじめへの関心</strong>」という変数を想定したい。たとえ一般論として「反対意識」がいじめを抑制するとしても、「いじめへの関心」が高い集団では、その抑制効果が相殺されたり、あるいは見せかけの相関（スプリアス相関）が生まれたりする可能性がある。</p>
+<p>より具体的に言えば、「反対意識の強さ」も「いじめの発生」も、実は第三の変数である「いじめへの関心の高さ」によって共に引き起こされているのかもしれない。つまり、いじめが身近な問題として常に意識され、関心が高い環境だからこそ、それに対するカウンターとしての反対意識も強く形成されるし、同時にいじめという行為も発生しやすくなる、という可能性だ。</p>
+<p>本研究のモデルはこの「いじめへの関心」のような重要な交絡因子（Confounding Factor）を考慮に入れていない。そのため、Manらの研究が示す一般的な因果関係を認めたとしても、本研究が測定した相関関係が、本当に「意識がいじめを抑制する」という因果を捉えたものだと結論づけることはできない。</p>
+<h3 id="2-%E6%A7%8B%E6%88%90%E7%9A%84%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E8%A8%AD%E5%95%8F%E3%81%AB%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BE%E3%82%8C%E3%81%9F%E7%89%B9%E5%AE%9A%E3%81%AE%E4%BE%A1%E5%80%A4%E8%A6%B3"><strong>2. 構成的バイアス：設問に埋め込まれた特定の価値観</strong></h3>
+<p>次に、本研究の根幹をなす従属変数「いじめ反対意識」の測定方法そのものに、深刻なバイアスが内在している可能性を検討する。この変数は、以下の5項目の回答を合成して算出されている。</p>
+<blockquote>
+<p>①「いじめられている生徒を誰も守ってあげないことに腹が立つ」
+②「自分を守れない生徒に手助けすることはいいことだ」
+③「いじめに加わることは悪いことだ」
+④「他の生徒がいじめられているのを見るのは不愉快だ」
+⑤「いじめられている他の生徒に誰かが味方するのは、いいことだ」</p>
+</blockquote>
+<p>これらの項目は、純粋な「いじめへの反対」を測定しているとは言い難い。むしろ、二つの異なる次元――<strong>「思考様式」と「行動規範」</strong>――における特定の価値観を強く反映している。</p>
+<p><strong>第一に、思考様式における「感情・共感性」のバイアス</strong>である。「腹が立つ」「不愉快だ」といった項目は、いじめに対する論理的な是非の判断以前に、回答者の感情的な反応の強度を問うている。</p>
+<p><strong>第二に、行動規範における「パターナリズム（介入主義）」のバイアス</strong>である。これは、①「…誰も守って<strong>あげない</strong>…」という、他者への介入を恩恵的な行為と捉える表現や、②「<strong>自分を守れない生徒</strong>に手助けすることはいいことだ」という、被害者を主体性のない無力な存在と規定するフレーミングに顕著である。</p>
+<p>これらの二重のバイアスは、いじめに反対する特定の人物像を、不当に「いじめ容認的」と判定してしまうリスクを生む。ここで、二つの異なる生徒像を想定してみよう。</p>
+<ul>
+<li><strong>生徒A（論理主義者）:</strong> 彼は、いじめを「非合理的で人権を侵害する許されない行為だ」と論理的に判断し、断固として反対している。しかし、彼は感情の起伏が乏しく、あるいは感情を判断基準にしないため、「腹が立つ」や「不愉快だ」といった感情的な反応には「全くそう思わない」と正直に回答する。</li>
+<li><strong>生徒B（非介入主義者）:</strong> 彼女は、「いじめは許されない」と強く信じている。しかし同時に、「安易な介入は個人の自立を妨げる」という信条から、②の「手助けすることはいいことだ」という項目には同意しない。</li>
+</ul>
+<p>この両者は、<strong>いじめに明確に反対しているにもかかわらず</strong>、Aは感情項目で、Bは介入項目で点数を失い、結果として「いじめ反対意識が低い」と判定されてしまう。このように、本調査は「いじめへの反対度」と「特定の価値観（感情・共感性や介入主義）への賛同度」を分離できておらず、測定されている指標の構成概念妥当性（Construct Validity）に重大な疑問が残る。</p>
+<h3 id="3-%E5%AE%9A%E7%BE%A9%E3%81%AE%E6%9B%96%E6%98%A7%E6%80%A7%E5%9B%9E%E7%AD%94%E8%80%85%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%84%E3%81%98%E3%82%81%E3%81%AE%E7%AF%84%E5%9B%B2"><strong>3. 定義の曖昧性：回答者によって異なる「いじめ」の範囲</strong></h3>
+<p>本調査の設問は、中核となる「いじめ」という言葉を何ら定義せずに使用している。いじめの定義は、「殴る蹴るなどの深刻な暴力」から「無視や軽い悪口」まで、回答者の主観に大きく委ねられる。これは、調査設計における構成概念の曖昧性という欠陥である。</p>
+<p>ここに一つの逆説が生まれる。例えば、いじめを「深刻な暴力」と狭く捉える生徒は、その明確な悪に対して強い反対感情を示し、高得点を得やすい。一方、いじめを「軽い悪口」まで含むと広く、厳格に捉える生徒は、その全ての行為に最大級の感情的反応を示すとは限らず、より穏当な回答を選ぶ可能性がある。つまり、<strong>いじめに対してより敏感で、その定義を厳格に捉えている生徒ほど、結果的に「いじめ反対意識が低い」と判定されかねない</strong>のだ。</p>
+<h3 id="4-%E5%9B%9E%E7%AD%94%E8%80%85%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E5%B9%B3%E5%92%8C%E3%81%AA%E7%92%B0%E5%A2%83%E3%81%A8%E6%AD%A3%E7%9B%B4%E3%81%95%E3%81%8C%E3%82%82%E3%81%9F%E3%82%89%E3%81%99%E7%BD%A0"><strong>4. 回答者バイアス：「平和な環境」と「正直さ」がもたらす罠</strong></h3>
+<p>PISAのような大規模調査では、匿名性があっても「社会的望ましさバイアス（Social Desirability Bias）」が働き、本心とは異なる建前の回答が生まれうる。だが、より深刻なのは、正直に回答しようとする生徒が不当に低い評価を受ける可能性である。</p>
+<p>特に、いじめが身近にない「平和な環境」にいる生徒は、いじめ問題に対して強い感情的リアリティを持っていない。彼らが正直に自身の感情の強度を評価した場合、「まあ反対だが、そこまで強く腹は立たない」と考え、最高点である「4」ではなく、より穏当な「3」を選ぶ可能性が高い。つまり、<strong>いじめ問題から遠い環境にいる正直な生徒が、その誠実さゆえに、統計上は「いじめを容認している」と解釈されかねない</strong>のである。</p>
+<hr>
+<h2 id="%E7%B5%90%E8%AB%96"><strong>(結論)</strong></h2>
+<p>以上の4点、
+<strong>1. 「いじめへの関心」という重要な交絡因子が考慮されておらず、欠落変数バイアスの可能性がある。</strong>
+<strong>2. 設問が、特定の思考様式（感情・論理）や行動規範（介入・非介入）を持つ回答者に有利／不利に働く構成的バイアスを抱えている。</strong>
+<strong>3. 「いじめ」の定義が曖昧で、より厳格で敏感な回答者が不利益を被る可能性がある。</strong>
+<strong>4. 平和な環境にいる正直な回答者が、不当に低いスコアを得る可能性がある。</strong></p>
+<p>という複合的な方法論的課題から、この論文が提示した結果は、「数学力や地位が高いほどいじめが起きやすい」という<strong>結論を直接的に支持するものではない、と考えるのが妥当でしょう。</strong></p>
+<p><strong>(補足：論文の正しい解釈について)</strong>
+なお、本稿は論文の価値を否定するものではない。留意すべきは、本論文の結果は「男子校」と「共学校」を単純比較してどちらの意識が低いと結論づけているものではない、という点だ。あくまで「日本の男子校の男子生徒」という特定の集団において、「社会経済的地位／数学的リテラシー」と「いじめ反対意識」の間に負の交互作用が見られた、という限定的な結果を提示したものである。本稿の指摘は、その限定的な結果でさえ、解釈には最大限の慎重さが求められる、という点にある。</p>
+
+</body>
+</html>
