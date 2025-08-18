@@ -3,36 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="description" content="いあのブログです。">
+    <title>いあのブログ</title>
     <style>
+        /* --- Basic Reset & Typography --- */
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.7;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* --- Link Style --- */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Header & Footer --- */
+        header, footer {
+            text-align: center;
+            margin-bottom: 40px;
         }
         h1 {
-            color: #333;
-            border-bottom: 2px solid #ccc;
+            color: #222;
+            border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            margin-top: 0;
         }
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* --- Content Section --- */
         .section {
-            margin: 20px 0;
+            margin-bottom: 40px;
         }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        /* --- Blog Post List --- */
+        .blog-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-list li {
+            margin-bottom: 15px;
+            background-color: #fff;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .post-date {
+            font-size: 0.9em;
+            color: #888;
+            margin-right: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    
-    <div class="section">
-        <h2>About</h2>
-        <p>こちらにサイトの説明を記載してください。</p>
-    </div>
 
-    <div class="section">
-        <h2>Contact</h2>
-        <p>連絡先情報があれば記載してください。</p>
-    </div>
+    <header>
+        <h1>いあのブログ</h1>
+        <p>[サイトのキャッチフレーズや簡単な紹介]らしい</p>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Articles</h2>
+            <div class="blog-list">
+                <ul>
+                    <!-- 新しい記事はここに追加していきます -->
+                    <li>
+                        <span class="post-date">[2024.08.18]</span>
+                        <a href="./blog/pisa2018-methodology-review.html">PISA論文「別学と共学の違いから見る男女のいじめに対する意識の計量分析」への方法論的検討</a>
+                    </li>
+                    <!-- 
+                    【次の記事の追加用テンプレート】
+                    <li>
+                        <span class="post-date">[YYYY.MM.DD]</span>
+                        <a href="./blog/your-new-article-filename.html">新しい記事のタイトル</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>About</h2>
+            <p>[ここにご自身の簡単な自己紹介や、このサイトで何を発信していくかを記述してください。]</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>ご連絡やご意見は、<a href="https://twitter.com/itoma_aikon" target="_blank">Twitter</a>のDMまでお願いいたします。</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; [2024] いあのブログ. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
