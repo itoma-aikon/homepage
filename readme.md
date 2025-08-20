@@ -4,7 +4,7 @@
 
 ## 概要 (About this Repository)
 
-このリポジトリは、私、綾つむぎが運営する個人ブログ「琴の綾」のソースコードを管理する場所です。
+このリポジトリは、私、綾つむぎが運営する個人ブログ「琴葉の綾」のソースコードを管理する場所です。
 日々の思索や、論文への方法論的検討などを記録しています。
 
 ## 技術スタック (Tech Stack)
@@ -20,7 +20,7 @@
 ## 著者 (Author)
 
 *   **名前:** いあ (ia)
-*   **ブログ:** [いあのブログ](https://itoma-aikon.github.io/homepage/index.html)
+*   **ブログ:** [琴葉の綾](https://itoma-aikon.github.io/homepage/index.html)
 *   **プロフィール:** [私について (About Me)](https://itoma-aikon.github.io/homepage/about.html)
 *   **連絡先:** [Twitter (@itoma_aikon)](https://twitter.com/itoma_aikon)
 
