@@ -1,6 +1,6 @@
 # いあのブログ - ソースコードリポジトリ
 
-[![ブログを閲覧する 🚀](https://img.shields.io/badge/Visit-My_Blog-007BFF?style=for-the-badge)](https://itoma-aikon.github.io/homepage/)
+[![ブログを閲覧する 🚀](https://img.shields.io/badge/Visit-My_Blog-007BFF?style=for-the-badge)](https://twillore.github.io/homepage/)
 
 ## 概要 (About this Repository)
 
@@ -20,9 +20,9 @@
 ## 著者 (Author)
 
 *   **名前:** いあ (ia)
-*   **ブログ:** [琴葉の綾](https://itoma-aikon.github.io/homepage/index.html)
-*   **プロフィール:** [私について (About Me)](https://itoma-aikon.github.io/homepage/about.html)
-*   **連絡先:** [Twitter (@itoma_aikon)](https://twitter.com/itoma_aikon)
+*   **ブログ:** [琴葉の綾](https://twillore.github.io/homepage/index.html)
+*   **プロフィール:** [私について (About Me)](https://twillore.github.io/homepage/about.html)
+*   **連絡先:** [Twitter (@itoma_aikon)](https://twitter.com/twillore)
 
 ## ライセンス (License)
 
