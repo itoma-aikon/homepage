@@ -78,8 +78,13 @@
     </main>
 
     <footer>
-        <p>&copy; [2025] 綾つむぎ. All Rights Reserved.</p>
+        <p>&copy; <span id="copyright-year">2025</span> 綾つむぎ. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+
 
 </body>
 </html>
