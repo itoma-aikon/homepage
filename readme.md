@@ -1,4 +1,4 @@
-# いあのブログ - ソースコードリポジトリ
+# 琴葉の綾 - ソースコードリポジトリ
 
 [![ブログを閲覧する 🚀](https://img.shields.io/badge/Visit-My_Blog-007BFF?style=for-the-badge)](https://twillore.github.io/homepage/)
 
@@ -19,10 +19,10 @@
 
 ## 著者 (Author)
 
-*   **名前:** いあ (ia)
+*   **名前:** 綾つむぎ（ayatumugi）
 *   **ブログ:** [琴葉の綾](https://twillore.github.io/homepage/index.html)
 *   **プロフィール:** [私について (About Me)](https://twillore.github.io/homepage/about.html)
-*   **連絡先:** [Twitter (@itoma_aikon)](https://twitter.com/twillore)
+*   **連絡先:** [Twitter (@twillore)](https://twitter.com/twillore)
 
 ## ライセンス (License)
 
