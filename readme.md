@@ -22,7 +22,7 @@
 *   **名前:** 綾つむぎ（ayatumugi）
 *   **ブログ:** [琴葉の綾](https://twillore.github.io/homepage/index.html)
 *   **プロフィール:** [私について (About Me)](https://twillore.github.io/homepage/about.html)
-*   **連絡先:** [Twitter (@twillore)](https://twitter.com/twillore)
+*   **連絡先:** [Twitter (@ayatsumugi0)](https://twitter.com/ayatsumugi0)
 
 ## ライセンス (License)
 
